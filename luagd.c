@@ -2168,8 +2168,10 @@ static const luaL_Reg LgdFunctions[] =
     { "createFromGif",          LgdImageCreateFromGif },
     { "createFromGifStr",       LgdImageCreateFromGifPtr },
 #endif
+ #ifdef GD_PNG
     { "createFromPng",          LgdImageCreateFromPng },
     { "createFromPngStr",       LgdImageCreateFromPngPtr },
+  #endif  
     { "createFromGd",           LgdImageCreateFromGd },
     { "createFromGdStr",        LgdImageCreateFromGdPtr },
     { "createFromGd2",          LgdImageCreateFromGd2 },
